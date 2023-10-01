@@ -1,0 +1,23 @@
+@port=8080
+
+###
+GET http://localhost:{{port}} HTTP/1.1
+
+
+###
+POST http://localhost:{{port}} HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="nome"
+
+dfelipe
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="email"
+
+dfelipe@email.com
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="comentario"
+
+Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça.
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
